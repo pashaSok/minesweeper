@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: calc(32px* 8);
+  max-height: calc(32px* 8);
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .box {
+  width: 32px;
+  height: 32px;
+  border: 1px solid darkgrey;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .box.hidden {
+  background-image: none;
+  background-color: lightgray;
+  border: 5px gray solid;
+  border-style: outset;
+  cursor: pointer;
+}
+.container .box.bomb-count-1 {
+  color: blue;
+}
+.container .box.bomb-count-2 {
+  color: green;
+}
+.container .box.bomb-count-3 {
+  color: red;
+}
+.container .box.bomb-count-4 {
+  color: purple;
+}
+.container .box.bomb-count-5 {
+  color: yellow;
+}
+.container .box.bomb-count-6 {
+  color: brown;
+}
+.container .box.bomb-count-7 {
+  color: pink;
+}
+.container .box.bomb-count-8 {
+  color: black;
+}
+.container .bomb-box {
+  background-image: url("bomb.png");
+  background-size: cover;
+  background-position: center;
+}
+.container .flag {
+  background-image: url("flag.png") !important;
+  background-size: cover;
+  background-position: center;
+  background-color: lightgray;
+  border: 5px gray solid;
+  border-style: outset;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

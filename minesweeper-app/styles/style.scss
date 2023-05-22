@@ -1,0 +1,65 @@
+$boxSize: 32px;
+* {
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+  max-width: calc(#{$boxSize}* 8);
+  max-height: calc(#{$boxSize}* 8);
+  display: flex;
+  flex-wrap: wrap;
+  .box {
+    width: $boxSize;
+    height: $boxSize;
+    border: 1px solid darkgrey;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.hidden {
+      background-image: none;
+      background-color: lightgray;
+      border: 5px gray solid;
+      border-style: outset;
+      cursor: pointer;
+    }
+    &.bomb-count-1 {
+      color: blue;
+    }
+    &.bomb-count-2 {
+      color: green;
+    }
+    &.bomb-count-3 {
+      color: red;
+    }
+    &.bomb-count-4 {
+      color: purple;
+    }
+    &.bomb-count-5 {
+      color: yellow;
+    }
+    &.bomb-count-6 {
+      color: brown;
+    }
+    &.bomb-count-7 {
+      color: pink;
+    }
+    &.bomb-count-8 {
+      color: black;
+    }
+  }
+  .bomb-box {
+    background-image: url("bomb.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .flag {
+    background-image: url("flag.png") !important;
+    background-size: cover;
+    background-position: center;
+    background-color: lightgray;
+    border: 5px gray solid;
+    border-style: outset;
+    cursor: pointer;
+  }
+}
